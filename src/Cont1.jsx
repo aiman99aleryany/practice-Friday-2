@@ -1,6 +1,6 @@
 import React from 'react';
 import { AddButton } from './AddButton';
-import myStyle from './myStyle.js';
+import myStyle from './myStyle';
 
 class App extends React.Component {
     render() {
@@ -9,8 +9,8 @@ class App extends React.Component {
 
         return (
             <div style={myStyle}>
-                {title}
-                {content}
+                <div>{title}</div>
+                <div>{content}</div>
                 {this.props.children}
             </div>
         );
